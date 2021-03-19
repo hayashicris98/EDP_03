@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgoldenrodyellow;
+           
+        }
+        .register-form{
+            border: 7px inset gray;
+            width: 300px;
+            height: 840px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: lightpink;
+        }
+        input{
+            border: 2px inset lightpink;
+        }
+        .btn{
+            border: 2px outset plum;
+            
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <div class="register-form" style="text-align: center;">
+        <div class="register-form_header">
+            <h1 class="register_heading" title="Đăng kí">Register</h1>
+            <p><i>Please <b>fill in this form</b> to create an account</i></p>
+    
+        </div>
+        <div class="register-form_form">
+            <div class="register-form_inpgroup">
+                <b>Fullname</b> *<br>
+                <input type="text" class="register-form_input" placeholder="Input your fullname">
+            </div>
+            <br>
+            <div class="register-form_inpgroup">
+                <b>Username</b> *<br>
+                <input type="text" class="register-form_input" placeholder="Input your username">
+            </div>
+            <br>
+            <div class="register-form_inpgroup">
+                <b>Password</b> *<br>
+                <input type="password" class="register-form_input" placeholder="Input your password">
+            </div>
+            <br>
+            <div class="register-form_inpgroup">
+                <b>Email</b> *<br>
+                <input type="email" class="register-form_input" placeholder="Input your email">
+            </div>
+            <br>
+            <div class="register-form_inpgroup">
+                <b>Telephone number</b> *<br>
+                <input type="number" class="register-form_input" placeholder="Input your phone number">
+            </div>
+        
+            <p><b>Input Object</b></p>
+            <input type="radio" name="Object" value="Student">Student
+            <input type="radio" name="Object" value="Teacher">Teacher
+
+            <p><b>Favorite</b></p>
+            <input type="checkbox" name="Favorite" value="Volleyball">Volleyball
+            <input type="checkbox" name="Favorite" value="Batminton">Batminton
+            <input type="checkbox" name="Favorite" value="Basketball">Basketball
+
+
+            <p><b>Address</b> *</p>    
+            <select name="Address">
+                <option value="Thanh Hóa">Thanh Hóa</option>
+                <option value="Bắc Giang" selected>Bắc Giang</option>
+                <option value="Hà Nội">Hà Nội</option>
+                <option value="Hải Phòng">Hải Phòng</option>
+                <option value="Sài Gòn">Sài Gòn</option>
+             </select>
+
+             <p><b>Birthday</b> *</p>
+             <input type="date" id="birthday" name="birthday">
+
+             <p><b>Your picture</b> *</p>
+             <input type="file" name="pic" style="background-color: thistle;">
+             <br>
+             <br>
+             <button class="btn" type="button" onclick="alert('Hello world!')"><b>Đăng ký</b></button>
+
+            
+        </div>
+    </div>
+    
+</body>
+</html>
